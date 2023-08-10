@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```
 ### Usage
 1. Navigate to the project directory:
-```
+```bash
 cd multiple-disease-prediction
 ```
 2. Run the Streamlit web app:
