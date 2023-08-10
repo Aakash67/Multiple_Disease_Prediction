@@ -31,7 +31,7 @@ with st.sidebar:
                            'Heart Disease Prediction',
                            'Kidney Disease Prediction',
                            'Breast Cancer Prediction',
-                           'Liver Disease Prediction'
+                           'Liver Disease Prediction',
                            'Parkinsons Disease Prediction'],
                           default_index=0)
     
