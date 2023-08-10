@@ -17,7 +17,7 @@ BreastCancer_model = pickle.load(open('Models/Breastcancer.pkl', 'rb'))
 
 liver_model = pickle.load(open('Models/liver.pkl', 'rb'))
 
-parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('Models/parkinsons_model.sav', 'rb'))
 
 
 
