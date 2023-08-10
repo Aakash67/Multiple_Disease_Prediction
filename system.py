@@ -253,7 +253,7 @@ if (selected == 'Kidney Disease Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        age_kidney = st.text_input('Age')
+        age = st.text_input('Age')
         
     with col2:
         bp = st.text_input('Blood Pressure')
@@ -329,7 +329,7 @@ if (selected == 'Kidney Disease Prediction'):
     
     # creating a button for Prediction    
     if st.button('Kidney Disease Test Result'):
-        kidney_prediction = kidney_model.predict([[age_kidney, bp, sg, al, su, rbc, pc, pcc, ba, bgr, bu, sc, sod, pot, hemo, pcv, wc, rc, htn, dm, cad, appet, pe, ane]])  
+        kidney_prediction = kidney_model.predict([[kidney, bp, sg, al, su, rbc, pc, pcc, ba, bgr, bu, sc, sod, pot, hemo, pcv, wc, rc, htn, dm, cad, appet, pe, ane]])  
         
         if (kidney_prediction[0] == 1):
             kidney_diagnosis = 'The person has kidney disease'
