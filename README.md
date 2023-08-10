@@ -42,7 +42,6 @@ cd multiple-disease-prediction
 2. Run the Streamlit web app:
 ```
 streamlit run system.py
-
 ```
 Access the web app in your browser by opening the displayed URL (usually http://localhost:8501).
 
