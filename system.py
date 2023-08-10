@@ -467,7 +467,7 @@ if (selected == 'Liver Disease Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        age_liver = st.text_input('Age')
+        age = st.text_input('Age')
         
     with col2:
         gender = st.text_input('Gender')
@@ -501,7 +501,7 @@ if (selected == 'Liver Disease Prediction'):
     
     # creating a button for Prediction    
     if st.button('Liver Disease Test Result'):
-        liver_prediction = liver_model.predict([[age_liver, gender, total_bilirubin, direct_bilirubin, alkaline_phosphotase, alamine_aminotransferase, aspartate_aminotransferase, total_protiens, albumin, albumin_globulin_ratio]])  
+        liver_prediction = liver_model.predict([[age, gender, total_bilirubin, direct_bilirubin, alkaline_phosphotase, alamine_aminotransferase, aspartate_aminotransferase, total_protiens, albumin, albumin_globulin_ratio]])  
         
         if (liver_prediction[0] == 1):
             liver_diagnosis = 'The person has liver disease'
