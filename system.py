@@ -326,9 +326,32 @@ if (selected == 'Kidney Disease Prediction'):
         
     # code for Prediction
     kidney_diagnosis = ''
+    age = float(age)
+    bp = float(bp)
+    sg = float(sg)
+    al = float(al)
+    su = float(su)
+    bgr = float(bgr)
+    bu = float(bu)
+    sc = float(sc)
+    sod = float(sod)
+    pot = float(pot)
+    hemo = float(hemo)
+    pcv = float(pcv)
+    wc = float(wc)
+    rc = float(rc)
+    htn = float(htn)  
+    dm = float(dm)    
+    cad = float(cad) 
+    appet = float(appet)
+    pe = float(pe)    
+    ane = float(ane) 
+
+# Now, you can make predictions
+kidney_prediction = kidney_model.predict([[age, bp, sg, al, su, rbc, pc, pcc, ba, bgr, bu, sc, sod, pot, hemo, pcv, wc, rc, htn, dm, cad, appet, pe, ane]])
     
     # creating a button for Prediction    
-    if st.button('Kidney Disease Test Result'):
+if st.button('Kidney Disease Test Result'):
         kidney_prediction = kidney_model.predict([[age, bp, sg, al, su, rbc, pc, pcc, ba, bgr, bu, sc, sod, pot, hemo, pcv, wc, rc, htn, dm, cad, appet, pe, ane]])  
         
         if (kidney_prediction[0] == 1):
@@ -336,7 +359,7 @@ if (selected == 'Kidney Disease Prediction'):
         else:
             kidney_diagnosis = 'The person does not have kidney disease'
         
-    st.success(kidney_diagnosis)
+st.success(kidney_diagnosis)
 
 
 
