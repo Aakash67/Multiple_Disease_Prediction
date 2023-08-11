@@ -6,7 +6,7 @@ This repository contains a web application that predicts multiple diseases using
 
 - `collab_notebook/`: Contains the Jupyter Notebook(s) used for data preprocessing, model training, and evaluation.
 
-- `models/`: Contains the trained machine learning models serialized using pickle.
+- `Models/`: Contains the trained machine learning models serialized using pickle.
 
 - `system.py`: The main Python file for the Streamlit web application.
 
