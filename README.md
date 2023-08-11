@@ -46,6 +46,18 @@ streamlit run system.py
 Access the web app in your browser by opening the displayed URL (usually http://localhost:8501).
 
 Choose a disease from the sidebar menu, input the relevant medical parameters, and click the corresponding button to get the disease prediction.
+## Datasets
+
+The Multiple Disease Prediction System using the following datasets:
+
+- [Diabetes Dataset](https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset)
+- [Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
+- [Kidney Disease Dataset](https://www.kaggle.com/datasets/akshayksingh/kidney-disease-dataset)
+- [Breast Cancer Dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset)
+- [Liver Disease Dataset](https://www.kaggle.com/datasets/uciml/indian-liver-patient-records)
+- [Parkson's Disease Dataset]_(https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set)
+
+Please download the datasets and provide the appropriate file paths in the Streamlit app for testing.
 
 ## Disease Prediction Results
 
