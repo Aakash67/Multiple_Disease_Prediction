@@ -58,5 +58,4 @@ Choose a disease from the sidebar menu, input the relevant medical parameters, a
 | 5    | Parkinson's Disease       | SVM   | 88%    |
 | 6    | Diabetes Disease       | Logistic Regression   | 76%    |
 
-Note: Accuracy values are indicative and may vary based on dataset and model improvements.
 
