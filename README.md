@@ -47,4 +47,16 @@ Access the web app in your browser by opening the displayed URL (usually http://
 
 Choose a disease from the sidebar menu, input the relevant medical parameters, and click the corresponding button to get the disease prediction.
 
+## Disease Prediction Results
+
+| S.No | Disease Prediction | Algorithm | Accuracy |
+|------|---------------------|-----------|----------|
+| 1    | Heart Disease          | Random Forest Classifier   | 98%   |
+| 2    | Breast Cancer       | Random Forest Classifier   | 96%    |
+| 3   | Kidney Disease      | Random Forest Classifier   | 100%    |
+| 4    | Liver Disease      | Logistic Regression   | 77%    |
+| 5    | Parkinson's Disease       | SVM   | 88%    |
+| 6    | Diabetes Disease       | Logistic Regression   | 76%    |
+
+Note: Accuracy values are indicative and may vary based on dataset and model improvements.
 
