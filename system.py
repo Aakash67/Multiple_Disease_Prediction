@@ -32,7 +32,7 @@ with st.sidebar:
                            'Kidney Disease Prediction',
                            'Breast Cancer Prediction',
                            'Liver Disease Prediction',
-                           'Parkinsons Disease Prediction'],
+                           'Parkinsons Prediction'],
                           default_index=0)
     
  # Parkinson's Prediction Page
