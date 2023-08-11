@@ -11,8 +11,6 @@ diabetes_model = pickle.load(open('Models/diabetes.pkl', 'rb'))
 
 heart_disease_model = pickle.load(open('Models/heart.pkl', 'rb'))
 
-kidney_model = pickle.load(open('Models/kidney.pkl', 'rb'))
-
 BreastCancer_model = pickle.load(open('Models/Breastcancer.pkl', 'rb'))
 
 liver_model = pickle.load(open('Models/liver.pkl', 'rb'))
@@ -29,7 +27,6 @@ with st.sidebar:
                           
                           ['Diabetes Prediction',
                            'Heart Disease Prediction',
-                           'Kidney Disease Prediction',
                            'Breast Cancer Prediction',
                            'Liver Disease Prediction',
                            'Parkinsons Prediction'],
@@ -244,99 +241,7 @@ if (selected == 'Heart Disease Prediction'):
     st.success(heart_diagnosis)
         
     
-# Kidney Disease Prediction Page
-if (selected == 'Kidney Disease Prediction'):
-    
-    # page title
-    st.title('Kidney Disease Prediction using ML')
-    
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        age = st.text_input('Age')
-        
-    with col2:
-        bp = st.text_input('Blood Pressure')
-        
-    with col3:
-        sg = st.text_input('Specific Gravity')
-        
-    with col1:
-        al = st.text_input('Albumin')
-        
-    with col2:
-        su = st.text_input('Sugar')
-        
-    with col3:
-        rbc = st.text_input('Red Blood Cells')
-        
-    with col1:
-        pc = st.text_input('Pus Cell')
-        
-    with col2:
-        pcc = st.text_input('Pus Cell Clumps')
-        
-    with col3:
-        ba = st.text_input('Bacteria')
-        
-    with col1:
-        bgr = st.text_input('Blood Glucose Random')
-        
-    with col2:
-        bu = st.text_input('Blood Urea')
-        
-    with col3:
-        sc = st.text_input('Serum Creatinine')
-        
-    with col1:
-        sod = st.text_input('Sodium')
-        
-    with col2:
-        pot = st.text_input('Potassium')
-        
-    with col3:
-        hemo = st.text_input('Hemoglobin')
-        
-    with col1:
-        pcv = st.text_input('Packed Cell Volume')
-        
-    with col2:
-        wc = st.text_input('White Blood Cell Count')
-        
-    with col3:
-        rc = st.text_input('Red Blood Cell Count')
-        
-    with col1:
-        htn = st.text_input('Hypertension')
-        
-    with col2:
-        dm = st.text_input('Diabetes Mellitus')
-        
-    with col3:
-        cad = st.text_input('Coronary Artery Disease')
-        
-    with col1:
-        appet = st.text_input('Appetite')
-        
-    with col2:
-        pe = st.text_input('Pedal Edema')
-        
-    with col3:
-        ane = st.text_input('Anemia')
 
-# Now, you can make predictions
-kidney_prediction = kidney_model.predict([[age, bp, sg, al, su, rbc, pc, pcc, ba, bgr, bu, sc, sod, pot, hemo, pcv, wc, rc, htn, dm, cad, appet, pe, ane]])
-    
-    # creating a button for Prediction    
-if st.button('Kidney Disease Test Result'):
-        kidney_prediction = kidney_model.predict([[age, bp, sg, al, su, rbc, pc, pcc, ba, bgr, bu, sc, sod, pot, hemo, pcv, wc, rc, htn, dm, cad, appet, pe, ane]])  
-        
-        if (kidney_prediction[0] == 1):
-            kidney_diagnosis = 'The person has kidney disease'
-        else:
-            kidney_diagnosis = 'The person does not have kidney disease'
-        
-st.success(kidney_diagnosis)
 
 
 
