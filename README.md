@@ -55,7 +55,7 @@ The Multiple Disease Prediction System using the following datasets:
 - [Kidney Disease Dataset](https://www.kaggle.com/datasets/akshayksingh/kidney-disease-dataset)
 - [Breast Cancer Dataset](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset)
 - [Liver Disease Dataset](https://www.kaggle.com/datasets/uciml/indian-liver-patient-records)
-- [Parkson's Disease Dataset]_(https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set)
+- [Parkson's Disease Dataset](https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set)
 
 Please download the datasets and provide the appropriate file paths in the Streamlit app for testing.
 
